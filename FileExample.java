@@ -11,31 +11,7 @@ import java.util.Scanner;
 
 public class FileExample {
 
-	public static void main(String[] args) {
-		
-		
-		String dosyaYolu = "C:\\Users\\erguv\\OneDrive\\Desktop\\Bilge Adam Boost\\File_Example\\deneme.txt";
-		File file = new File(dosyaYolu);
-		try {
-			dosyaYarat(file);
-		}catch (Exception ex) {
-			System.out.println("Dosya oluşturulurken hata oluştu");
-		}
-		
-		try {
-			dosyaYaz(file);
-		} catch (FileNotFoundException e) {
-			System.out.println("Dosya bulunamadı");
-		} catch(Exception ex) {
-			System.out.println("Genel hata");
-		}
-		
-		try {
-			dosyaOku(file);
-		} catch (IOException e) {
-			System.out.println("Dosya okuma hatası");
-		}	
-	}
+	
 	
 	public static void dosyaYarat(File file) throws Exception
 	{
